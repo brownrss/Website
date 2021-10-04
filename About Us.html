@@ -218,6 +218,71 @@ nav a:hover {
 }
 </style>
 
+<style>
+.about_text {
+ height: 50px;  
+ overflow: hidden;
+ position: relative;
+ font-size: 200%
+}
+.about_text h3 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: left;
 
+ /* Apply animation to this element */  
+ animation: example1 10s linear;
+}
+/* Move it (define the animation) */
+@keyframes example1 {
+ 0%   { 
+ transform: translateX(200%);     
+ }
+ 100% { 
+ transform: translateX(0%); 
+ }
+}
+</style>
+
+<div class="about_text">
+<h3><center>About Us</center></h3>
+</div>
+
+<style>
+.example2 {
+ height: 250px; 
+ overflow: hidden;
+ position: relative;
+ font-size: 400%;
+}
+.example2 h4 {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: left;
+
+ /* Apply animation to this element */  
+ animation: example2 10s ease-out;
+}
+/* Move it (define the animation) */
+@keyframes example2 {
+ 0%   { 
+ transform: translateY(200%);     
+ }
+ 100% { 
+ transform: translateY(0%); 
+ }
+}
+</style>
+
+<div class="example2">
+<h4><center>We are an open  community<br> for students studying remotely <br> at Brown University to <br>support and hold each <br> other accountable.
+</center></h4>
+</div>
 
 </html>
