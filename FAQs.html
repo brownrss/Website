@@ -155,6 +155,99 @@ nav a:hover {
 }
 </style>
 
+<title>faq</title>
+
+    <style>
+        /*FAQS*/
+        
+        .faq_question {
+            margin: 0px;
+            padding: 0px 0px 5px 0px;
+            display: inline-block;
+            cursor: pointer;
+            font-weight: bold; 
+        }
+        
+        .faq_answer_container {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.faq_question').click(function() {
+
+                if ($(this).parent().is('.open')) {
+                    $(this).closest('.faq').find('.faq_answer_container').slideUp();
+                    $(this).closest('.faq').removeClass('open');
+                } else {
+                    $('.faq_answer_container').slideUp();
+                    $('.faq').removeClass('open');
+                    $(this).closest('.faq').find('.faq_answer_container').slideDown();
+                    $(this).closest('.faq').addClass('open');
+                }
+
+            });
+        });
+    </script>
+
+   <h1>FAQs</h1>
+    <div class="faq_container">
+        <div class="faq">
+            <div class="faq_question open">Who can join?</div>
+            <div class="faq_answer_container" style="display: block;">
+                <div class="faq_answer">Anyone who takes a class online can join. Our pilot program is targeted towards students at Brown University, but we hope to expand in the near future so that students studying online can meet others across the country and even the world.</div>
+            </div>
+        </div>
+    
+
+    
+        <div class="faq">
+            <div class="faq_question">What's the point?</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer">Learning online doesn't mean that you have to be alone. We want to create a social ecosystem for students studying remotely so that they can share resources, keep each other motivated, and expand their network.</div>
+            </div>
+        </div>
+
+      
+
+       
+        
+   
+         <div class="faq">
+            <div class="faq_question">Are there any perks?</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer">Definitely! Once a month we host an event and give out prizes like Amazon Gift Cards, Remote Study Group Swag, and more!</div>
+            </div>
+        </div>
+    
+        <div class="faq">
+            <div class="faq_question">Why should I join?</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer">Because you have everything to gain and nothing to lose. As the COVID-19 pandemic continues we will still face periods of isolation. Students will still be asked to quarantine and many others will continue choosing to study remotely. However, socializing is part of the college experience. By joining, you have access to a network filled with people just like you who you can lean on for support. </div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq_question">When do you meet?</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer">Sunday - Friday from 12 pm - 2 pm Eastern Standard Time.However, by clicking on the interactive map you can find the schedule of other students in your area who are available to study. Feel free to reach out to them to set up a date and time to study. Very soon we will also offer paid remote moderator positions where you can staff a remote study room and get paid based on how many people join! </div>
+            </div>
+        </div>
+     
+        <div class="faq">
+            <div class="faq_question">How can I get involved?</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer">Click the Join Us tab to sign up. </div>
+            </div>
+        </div>
+
+        
+   
+    </div>
+
+
 
 
 
