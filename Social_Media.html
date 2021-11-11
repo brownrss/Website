@@ -1,10 +1,29 @@
 <html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><nav class="topnav">
-    <ul>
-      <li><a href="https://brownrss.github.io/Website/">Home</a></li>
-      <li><a href="https://brownrss.github.io/Website/Join_Us">Join Us</a></li>
-      <li><a href="https://brownrss.github.io/Website/Other%20Resources">Resources</a></li> 
-      <li class="dropdown right">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <input type="checkbox" id="check" />
+        <label for="check" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a href="https://brownrss.github.io/Website/" class="logo">Brown Remote Study Squad</a>
+        <ul class="navlinks">
+          <li><a href="https://brownrss.github.io/Website/Other%20Resources">Resources</a></li>
+          <li><a href="https://brownrss.github.io/Website/About_Us">About</a></li>
+          <li><a href="https://brownrss.github.io/Website/Join_Us" class="contact">Join Us</a></li>
+          <li class="dropdown right">
     <a href="javascript:void(0)" class="dropbtn">Get Engaged</a>
     <div class="dropdown-content">
       <a href="https://events.brown.edu/all/search/Virtual">Virtual Events</a>
@@ -12,13 +31,134 @@
       <a href="https://brownrss.github.io/Website/Study_Groups">Study Groups</a>
       <a href="https://brownrss.github.io/Website/Social_Media">Social Media</a>
     </div>
-  </li>
-    </ul>
-  </nav>
-<style>
-body {margin:0;font-family:Arial}
+        </ul>
+      </nav>
+    </header>
+  </body>
 
-.topnav {
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@font-face {
+  font-family: AstroSpace;
+  src: url(/fonts/AstroSpace.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: #212c3b;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header {
+  background-color: #141b25;
+}
+.main-nav {
+  height: 90px;
+}
+.logo {
+  color: white;
+  line-height: 90px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 30px;
+  font-family: "AstroSpace", sans-serif;
+}
+.navlinks {
+  list-style: none;
+  float: right;
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+.navlinks li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+.navlinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s linear 0s;
+  text-transform: uppercase;
+}
+.navlinks li a:hover {
+  color: #7ebcb9;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #7ebcb9;
+}
+li a.contact {
+  background-color: #00adb5;
+  padding: 9px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  border-bottom: none;
+}
+li a.contact:hover {
+  background-color: #047e85;
+  color: white;
+  border-bottom: none;
+}
+#check {
+  display: none;
+}
+.menu-btn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 90px;
+  margin-right: 40px;
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  .navlinks {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s;
+    right: -100%;
+    background: #222831;
+  }
+  .navlinks li {
+    display: block;
+  }
+  .navlinks li a {
+    font-size: 20px;
+  }
+  .navlinks li a:hover {
+    border-bottom: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  #check:checked ~ .navlinks {
+    right: 0;
+  }
+}
+@media (max-width: 360px) {
+  .logo {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .menu-btn {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+  .menu-btn:focus {
+    color: blue;
+  }
+}
+  </style>
+
+  <style>
+    .topnav {
   overflow: hidden;
   background-color: #333;
 }
@@ -53,7 +193,7 @@ body {margin:0;font-family:Arial}
   outline: none;
   color: white;
   padding: 14px 16px;
-  background-color: inherit;
+  background-color: #212c3b;
   font-family: inherit;
   margin: 0;
 }
@@ -61,7 +201,7 @@ body {margin:0;font-family:Arial}
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #212c3b; 
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -116,44 +256,10 @@ body {margin:0;font-family:Arial}
   .topnav.responsive .dropdown-content {position: relative;}
   .topnav.responsive .dropdown .dropbtn {
     display: block;
-    width: 100%;
+    width: 100vw;
     text-align: left;
   }
-}
-</style>
-
-<style>
-  nav {
-  height: 44px;
-  background: #FFFFFF;
-}
-
-nav ul {
-  display: flex;
-  height: 44px;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-nav li {}
-
-nav a {
-  display: block;
-  color: black;
-  font-size: 20px;
-  font-weight:bold;
-  font-weight: lighter;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #B8B8B8;
-}
-</style>
+  </style>
 
 
 
